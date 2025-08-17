@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BarCodeScanner</name>
+    </assembly>
+    <members>
+        <member name="M:BarCodeScanner.MainPage.ParseGs1Data(System.String)">
+            <summary>
+            Phân tích chuỗi barcode GS1-128 được cải thiện cho barcode dài
+            </summary>
+        </member>
+        <member name="T:BarCodeScanner.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

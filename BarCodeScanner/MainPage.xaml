@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BarCodeScanner.MainPage"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.Maui.Controls">
+
+             <!-- <zxing:CameraBarcodeReaderView 
+                x:Name="cameraBarcodeReaderView"
+                IsDetecting="True"
+                BarcodesDetected="BarcodeDetected" /> -->
+<Grid>
+    <zxing:CameraBarcodeReaderView 
+        x:Name="cameraBarcodeReaderView"
+        BarcodesDetected="BarcodeDetected"
+        CameraLocation="Rear"
+        IsDetecting="True"
+        IsTorchOn="False" />
+    
+    <!-- Overlay riêng biệt, không nằm trong CameraBarcodeReaderView -->
+    
+    
+    <!-- Nút bật đèn flash -->
+    <Button x:Name="flashButton" 
+            Text="🔦" 
+            BackgroundColor="Black" 
+            TextColor="White"
+            WidthRequest="50" 
+            HeightRequest="50"
+            CornerRadius="25"
+            HorizontalOptions="End" 
+            VerticalOptions="Start"
+            Margin="20"
+            Clicked="OnFlashButtonClicked"/>
+</Grid>
+    
+</ContentPage>
